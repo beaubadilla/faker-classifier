@@ -1,0 +1,13 @@
+random_state = 1, n = 5
+win, win, win, win, win
+Accuracy=0.4
+Type 1=f100.0% of errors
+Type 2=f0.0% of errors
+
+random_state = 2, n = 20
+win, win, loss, loss, win, loss, loss, loss, win, loss, win, loss, win, loss, win, win, win, win, win!, win
+Accuracy=0.65
+Type 1=71.43% of errors
+Type 2=28.57% of errors
+
+(13 + 2)/(20 + 5) = 0.60

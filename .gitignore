@@ -1,0 +1,11 @@
+venv/
+.vscode/
+build/
+.venv/
+*.pyc
+notes.txt
+*.png
+*.exe
+*.spec
+pyvenv.cfg
+*.dot
