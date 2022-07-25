@@ -419,6 +419,211 @@
         "xgboost": "1.6.1"
       },
       "description": "balanced dataset with 'roles' instead of 'champions'"
+    },
+    {
+      "scores": {
+        "train_score": 0.5703788981439659,
+        "test_score": 0.5689655172413793
+      },
+      "params": {
+        "model__randomforestclassifier__max_depth": 5,
+        "model__randomforestclassifier__max_samples": 0.4,
+        "model__randomforestclassifier__n_estimators": 25
+      },
+      "columns": [
+        "Side",
+        "tournament_curr_win_percentage",
+        "teams_region",
+        "teammate_role_top",
+        "teammate_role_jungle",
+        "teammate_role_mid",
+        "teammate_role_adc",
+        "teammate_role_support",
+        "enemy_role_top",
+        "enemy_role_jungle",
+        "enemy_role_mid",
+        "enemy_role_adc",
+        "enemy_role_support"
+      ],
+      "dataset_meta_data": {
+        "shape": [
+          520,
+          13
+        ]
+      },
+      "hyperparam_tuning": {
+        "model__randomforestclassifier__n_estimators": [
+          25,
+          50,
+          75
+        ],
+        "model__randomforestclassifier__max_depth": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30
+        ],
+        "model__randomforestclassifier__max_samples": [
+          0.2,
+          0.4,
+          0.6,
+          0.8
+        ]
+      },
+      "file_name": "rf_3.pkl",
+      "type": "Pipeline",
+      "versions": {
+        "pandas": "1.3.5",
+        "numpy": "1.21.6",
+        "scikit-learn": "1.0.2",
+        "seaborn": "0.11.2",
+        "sklearn": "0.0",
+        "tensorflow": "2.9.1",
+        "xgboost": "1.6.1"
+      },
+      "description": "[supposedly] using undersampling"
+    },
+    {
+      "scores": {
+        "train_score": 0.612535464807433,
+        "test_score": 0.5140186915887851
+      },
+      "params": {
+        "model__randomforestclassifier__max_depth": 5,
+        "model__randomforestclassifier__max_samples": 0.6,
+        "model__randomforestclassifier__n_estimators": 25
+      },
+      "columns": [
+        "Side",
+        "tournament_curr_win_percentage",
+        "teams_region",
+        "teammate_role_top",
+        "teammate_role_jungle",
+        "teammate_role_mid",
+        "teammate_role_adc",
+        "teammate_role_support",
+        "enemy_role_top",
+        "enemy_role_jungle",
+        "enemy_role_mid",
+        "enemy_role_adc",
+        "enemy_role_support"
+      ],
+      "dataset_meta_data": {
+        "shape": [
+          789,
+          13
+        ]
+      },
+      "hyperparam_tuning": {
+        "model__randomforestclassifier__n_estimators": [
+          25,
+          50,
+          75
+        ],
+        "model__randomforestclassifier__max_depth": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30
+        ],
+        "model__randomforestclassifier__max_samples": [
+          0.2,
+          0.4,
+          0.6,
+          0.8
+        ]
+      },
+      "file_name": "rf_4.pkl",
+      "type": "Pipeline",
+      "versions": {
+        "pandas": "1.3.5",
+        "numpy": "1.21.6",
+        "scikit-learn": "1.0.2",
+        "seaborn": "0.11.2",
+        "sklearn": "0.0",
+        "tensorflow": "2.9.1",
+        "xgboost": "1.6.1"
+      },
+      "description": "[supposedly] using undersampling"
+    },
+    {
+      "scores": {
+        "train_score": 0.5748471599563667,
+        "test_score": 0.5520361990950227
+      },
+      "params": {
+        "model__xgbclassifier__alpha": 1,
+        "model__xgbclassifier__lambda": 1,
+        "model__xgbclassifier__learning_rate": 0.5,
+        "model__xgbclassifier__max_delta_step": 3,
+        "model__xgbclassifier__max_depth": 5,
+        "model__xgbclassifier__min_child_weight": 10,
+        "model__xgbclassifier__min_split_loss": 1,
+        "model__xgbclassifier__subsample": 0.5
+      },
+      "columns": [
+        "Side",
+        "tournament_curr_win_percentage",
+        "teams_region",
+        "teammate_role_top",
+        "teammate_role_jungle",
+        "teammate_role_mid",
+        "teammate_role_adc",
+        "teammate_role_support",
+        "enemy_role_top",
+        "enemy_role_jungle",
+        "enemy_role_mid",
+        "enemy_role_adc",
+        "enemy_role_support"
+      ],
+      "dataset_meta_data": {
+        "shape": [
+          789,
+          13
+        ]
+      },
+      "hyperparam_tuning": {
+        "model__xgbclassifier__alpha": [
+          1
+        ],
+        "model__xgbclassifier__lambda": [
+          1
+        ],
+        "model__xgbclassifier__learning_rate": [
+          0.5
+        ],
+        "model__xgbclassifier__max_delta_step": [
+          3
+        ],
+        "model__xgbclassifier__max_depth": [
+          5
+        ],
+        "model__xgbclassifier__min_child_weight": [
+          10
+        ],
+        "model__xgbclassifier__min_split_loss": [
+          1
+        ],
+        "model__xgbclassifier__subsample": [
+          0.5
+        ]
+      },
+      "file_name": "xgb_3.pkl",
+      "type": "Pipeline",
+      "versions": {
+        "pandas": "1.3.5",
+        "numpy": "1.21.6",
+        "scikit-learn": "1.0.2",
+        "seaborn": "0.11.2",
+        "sklearn": "0.0",
+        "tensorflow": "2.9.1",
+        "xgboost": "1.6.1"
+      },
+      "description": "using undersampling"
     }
   ]
 }

@@ -132,7 +132,7 @@ subclasses = {
     "Twitch": "Marksman Glasscannon",
     "Udyr": "Fighter Juggernaut",
     "Urgot": "Fighter Juggernaut",
-    "Varus": "Marksman Marksman Mage Artillery",
+    "Varus": "Marksman Sniper Mage Artillery",
     "Vayne": "Marksman Glasscannon",
     "Veigar": "Mage Burst",
     "Vel'Koz": "Mage Artillery",
@@ -157,4 +157,5 @@ subclasses = {
     "Ziggs": "Mage Artillery",
     "Zilean": "Controller Enchanter",
     "Zoe": "Mage Burst",
-    "Zyra": "Controller Catcher"}
+    "Zyra": "Controller Catcher",
+}
