@@ -624,6 +624,156 @@
         "xgboost": "1.6.1"
       },
       "description": "using undersampling"
+    },
+    {
+      "scores": {
+        "train_score": 0.632839658807744,
+        "test_score": 0.5535714285714286
+      },
+      "params": {
+        "model__randomforestclassifier__max_depth": 8,
+        "model__randomforestclassifier__max_samples": 0.6,
+        "model__randomforestclassifier__n_estimators": 25
+      },
+      "columns": [
+        "Side",
+        "tournament_curr_win_percentage",
+        "teams_region",
+        "teammate_role_top",
+        "teammate_role_jungle",
+        "teammate_role_mid",
+        "teammate_role_adc",
+        "teammate_role_support",
+        "enemy_role_top",
+        "enemy_role_jungle",
+        "enemy_role_mid",
+        "enemy_role_adc",
+        "enemy_role_support",
+        "tournament_type",
+        "blue_physical_damage_perc",
+        "blue_magic_damage_perc",
+        "blue_true_damage_perc",
+        "red_physical_damage_perc",
+        "red_magic_damage_perc",
+        "red_true_damage_perc"
+      ],
+      "dataset_meta_data": {
+        "shape": [
+          789,
+          20
+        ]
+      },
+      "hyperparam_tuning": {
+        "model__randomforestclassifier__n_estimators": [
+          15,
+          25,
+          35
+        ],
+        "model__randomforestclassifier__max_depth": [
+          3,
+          5,
+          8
+        ],
+        "model__randomforestclassifier__max_samples": [
+          0.5,
+          0.6,
+          0.7
+        ]
+      },
+      "file_name": "rf_5.pkl",
+      "type": "Pipeline",
+      "versions": {
+        "pandas": "1.3.5",
+        "numpy": "1.21.6",
+        "scikit-learn": "1.0.2",
+        "seaborn": "0.11.2",
+        "sklearn": "0.0",
+        "tensorflow": "2.9.1",
+        "xgboost": "1.6.1"
+      },
+      "description": "added damage profile composition columns"
+    },
+    {
+      "scores": {
+        "train_score": 0.5625708512546304,
+        "test_score": 0.5429864253393666
+      },
+      "params": {
+        "model__xgbclassifier__alpha": 1,
+        "model__xgbclassifier__lambda": 1,
+        "model__xgbclassifier__learning_rate": 0.5,
+        "model__xgbclassifier__max_delta_step": 3,
+        "model__xgbclassifier__max_depth": 5,
+        "model__xgbclassifier__min_child_weight": 10,
+        "model__xgbclassifier__min_split_loss": 1,
+        "model__xgbclassifier__subsample": 0.5
+      },
+      "columns": [
+        "Side",
+        "tournament_curr_win_percentage",
+        "teams_region",
+        "teammate_role_top",
+        "teammate_role_jungle",
+        "teammate_role_mid",
+        "teammate_role_adc",
+        "teammate_role_support",
+        "enemy_role_top",
+        "enemy_role_jungle",
+        "enemy_role_mid",
+        "enemy_role_adc",
+        "enemy_role_support",
+        "tournament_type",
+        "blue_physical_damage_perc",
+        "blue_magic_damage_perc",
+        "blue_true_damage_perc",
+        "red_physical_damage_perc",
+        "red_magic_damage_perc",
+        "red_true_damage_perc"
+      ],
+      "dataset_meta_data": {
+        "shape": [
+          789,
+          20
+        ]
+      },
+      "hyperparam_tuning": {
+        "model__xgbclassifier__alpha": [
+          1
+        ],
+        "model__xgbclassifier__lambda": [
+          1
+        ],
+        "model__xgbclassifier__learning_rate": [
+          0.5
+        ],
+        "model__xgbclassifier__max_delta_step": [
+          3
+        ],
+        "model__xgbclassifier__max_depth": [
+          5
+        ],
+        "model__xgbclassifier__min_child_weight": [
+          10
+        ],
+        "model__xgbclassifier__min_split_loss": [
+          1
+        ],
+        "model__xgbclassifier__subsample": [
+          0.5
+        ]
+      },
+      "file_name": "xgb_4.pkl",
+      "type": "Pipeline",
+      "versions": {
+        "pandas": "1.3.5",
+        "numpy": "1.21.6",
+        "scikit-learn": "1.0.2",
+        "seaborn": "0.11.2",
+        "sklearn": "0.0",
+        "tensorflow": "2.9.1",
+        "xgboost": "1.6.1"
+      },
+      "description": "added damage profile composition columns"
     }
   ]
 }
